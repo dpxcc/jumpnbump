@@ -1,0 +1,14 @@
+{
+  "name": "jumpnbump",
+  "version": "1.0.0",
+  "description": "Jump n Bump in JS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpxcc/jumpnbump.git"
+  },
+  "author": "dpxcc",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
