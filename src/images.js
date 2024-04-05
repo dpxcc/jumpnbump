@@ -1,6 +1,5 @@
 export class Images {
-    constructor()
-    {
+    constructor() {
         this.images = {};
     }
 
@@ -11,4 +10,4 @@ export class Images {
         }
         return this.images[src];
     }
-};
+}

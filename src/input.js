@@ -14,4 +14,4 @@ export class Input {
     onKeyUp(event) {
         this.keys[event.keyCode] = false;
     }
-};
+}

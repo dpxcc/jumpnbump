@@ -18,4 +18,4 @@ export class Renderer {
     drawImage(image, sx, sy, dx, dy, w, h) {
         this.ctx.drawImage(image, sx, sy, w, h, dx, dy, w, h);
     }
-};
+}

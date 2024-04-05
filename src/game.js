@@ -1,5 +1,5 @@
-import { Key } from './key';
-import { Player } from './player';
+import { Key } from "./key";
+import { Player } from "./player";
 
 const width = 400;
 const height = 256;
@@ -15,7 +15,7 @@ export class Game {
             new Player(images, 0, [Key.ARROW_LEFT, Key.ARROW_RIGHT, Key.ARROW_UP]),
             new Player(images, 1, [Key.A, Key.D, Key.W]),
             new Player(images, 2, [Key.V, Key.N, Key.G]),
-            new Player(images, 3, [Key.J, Key.L, Key.I])
+            new Player(images, 3, [Key.J, Key.L, Key.I]),
         ];
         for (const player of this.players) {
             player.spawn(level, this.players);
@@ -67,4 +67,4 @@ export class Game {
         this.render();
         requestAnimationFrame(() => this.gameLoop());
     }
-};
+}

@@ -10,5 +10,5 @@ export const Key = {
     L: 76,
     N: 78,
     V: 86,
-    W: 87
+    W: 87,
 };

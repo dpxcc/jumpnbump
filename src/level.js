@@ -1,5 +1,4 @@
-export class Level
-{
+export class Level {
     static WIDTH = 22;
     static HEIGHT = 16;
     static Tile = {
@@ -7,7 +6,7 @@ export class Level
         SOLID: 1,
         WATER: 2,
         ICE: 3,
-        SPRING: 4
+        SPRING: 4,
     };
 
     constructor(images) {
@@ -29,15 +28,15 @@ export class Level
             "1000000000000000000001",
             "1100000000000000000011",
             "2222222214000001333111",
-            "1111111111111111111111"
+            "1111111111111111111111",
         ]);
     }
 
     parseTiles(tiles) {
-        return tiles.map(row => [...row].map(tile => parseInt(tile)));
+        return tiles.map((row) => [...row].map((tile) => parseInt(tile)));
     }
 
     getTile(tileX, tileY) {
         return this.tiles[tileY][tileX];
     }
-};
+}
