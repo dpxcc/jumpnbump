@@ -1,3 +1,8 @@
+// grid: 16 x 16
+// x: 0 .. 351
+// y: 0 .. 255
+// 336..351
+// w 16
 export class Level {
     static WIDTH = 22;
     static HEIGHT = 16;
@@ -38,5 +43,10 @@ export class Level {
 
     getTile(tileX, tileY) {
         return this.tiles[tileY][tileX];
+    }
+
+    isBlock(tileX, tileY) {
+        const tile = this.getTile(tileX, tileY);
+        return tile == Level.Tile.SOLID || tile == Level.Tile.ICE || tile == Level.Tile.SPRING;
     }
 }

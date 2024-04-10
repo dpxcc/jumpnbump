@@ -31,7 +31,7 @@ export class Game {
         // collision resolution
 
         for (const player of this.players) {
-            player.update(this.input);
+            player.update(this.level, this.input);
         }
 
         // for (let i = 0; i < this.players.length - 1; i++) {
@@ -60,6 +60,7 @@ export class Game {
             player.render(this.renderer);
         }
         this.renderer.drawImage(this.level.foreground, 0, 0, 0, 0, width, height);
+        this.renderer.rect(0, 0, 400, 256);
     }
 
     gameLoop() {
